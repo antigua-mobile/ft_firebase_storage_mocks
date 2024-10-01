@@ -122,5 +122,11 @@ class MockTaskSnapshot implements TaskSnapshot {
   TaskState get state => TaskState.success;
 
   @override
+  int get bytesTransferred => 1;
+  
+  @override
+  int get totalBytes => 1;
+
+  @override
   dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }
